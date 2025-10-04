@@ -1,33 +1,34 @@
+import Image from "next/image";
 export default function PortfolioSection(){
     const projects = [
         {
             title: "Project Management Dashboard",
-            image: "/portfolio/project1.jpg",
+            image: "/portfolio/project1.JPG",
             description: "Full-stack platform for managing business operations."
         },
         {
             title: "IT Support ",
-            image: "/portfolio/project5.jpg",
+            image: "/portfolio/project5.JPG",
             description: "Setup, monitor and manage online activities"
         },
         {
             title: "Branding Design",
-            image: "/portfolio/project2.jpg",
+            image: "/portfolio/project2.JPG",
             description: "SEO campaign for E-commerce"
         },
         {
             title: "Software Development",
-            image: "/portfolio/project3.jpg",
+            image: "/portfolio/project3.JPG",
             description: "Full-stack application"
         },
         {
             title: "Project Research ",
-            image: "/portfolio/project4.jpg",
+            image: "/portfolio/project4.JPG",
             description: "Research best tools to automate and increase productivity."
         },
         {
             title: "Project Management Dashboard",
-            image: "/portfolio/project6.jpg",
+            image: "/portfolio/project6.JPG",
             description: "Admin platform for managing business operations."
         }
     ];
@@ -41,7 +42,7 @@ export default function PortfolioSection(){
                 <div className="grid md:grid-cols-2 gap-6 mx-4">
                     {projects.map((p,i) => (
                         <div key={i} className="bg-white rounded-lg shadow hover:shadow-lg transition">
-                            <img src={p.image} alt={p.title} className="w-full h-56 bg-cover bg-center rounded-t-lg" />
+                            <Image src={p.image} alt={p.title} width={500} height={300} className="w-full h-56 bg-cover bg-center rounded-t-lg" />
                             <div className="p-4">
                                 <span className="text-sm font-serif text-green-600">{p.description}</span>
                                 <h3 className="text-lg font-semibold font-serif mt-1">{p.title}</h3>

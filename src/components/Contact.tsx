@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { FaSquareXTwitter, FaLinkedin, FaEnvelope, FaFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter, FaEnvelope, FaFacebook } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Contact() {
@@ -23,13 +23,13 @@ export default function Contact() {
         headers: { Accept: "application/json" },
       });
       if (response.ok) {
-        toast.success("✅ Message sent successfully!");
+        toast.success("Message sent successfully!");
         form.reset();
       } else {
-        toast.error("❌ Something went wrong, Please try again.");
+        toast.error(" Something went wrong, Please try again.");
       }
     } catch (error) {
-      toast.error("❌ Network error, Please try again.");
+      toast.error(" Network error, Please try again.");
     } finally {
       setLoading(false);
     }

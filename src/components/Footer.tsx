@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
-import { FaSquareXTwitter, FaLinkedin, FaTelegram , FaEnvelopeOpenText, FaWhatsapp, FaFacebook} from "react-icons/fa6";
+import { FaSquareXTwitter, FaLinkedin , FaEnvelopeOpenText, FaWhatsapp, FaFacebook} from "react-icons/fa6";
 export default function Footer(){
-    const scrollToHome = () => {
-        document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
-    };
+    // const scrollToHome = () => {
+    //     document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
+    // };
 
     return (
         <footer className="bg-gradient-to-b from-green-500 via-green-700 to-blue-900 text-green-100 py-8 lg:py-16">

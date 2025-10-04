@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 const services = [
     {
@@ -43,7 +43,7 @@ export default function ServicesSection(){
                 <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
                         <div key={index} className="bg-green-700 rounded-lg shadow-md p-5 hover:shadow-xl hover:scale-105 transition-transform duration-300">
-                            <img src={service.image} alt={service.title} className="h-30 w-30 mx-auto mb-4" />
+                            <Image width={500} height={300} src={service.image} alt={service.title} className="h-30 w-30 mx-auto mb-4" />
                             <h3 className="text-xl font-serif font-semibold mb-2">{service.title}</h3>
                             <p className="text-green-100 font-serif text-sm">{service.description}</p>
                         </div>

@@ -1,20 +1,11 @@
 "use client";
-import { details } from "framer-motion/client";
+import Image from "next/image";
+
 import { useEffect, useState } from "react";
 
-export default function About(){
-    const skills = [
-        {name: "Project Management", level: 92},
-        {name: "Application Development", level: 85},
-        {name: "SEO & Social Media marketing", level: 88},
-        {name: "IT Support & Tech Setup", level: 90},
-    ];
 
-    const timeline = [
-        {year: "2015 - Present", detail: "Freelance Project Manager & Developer"},
-        {year: "2016 - 2020", detail: "IT Support, Daystar Christian Center"},
-        {year: "2016 - 2018", detail: "Developer, Teledom Communications"}
-    ];
+export default function About(){
+  
 
     const [animation, setAnimation] = useState(false);
 
@@ -33,7 +24,7 @@ export default function About(){
         <section id="about" className="py-8 lg:py-20 bg-gradient-to-t from-green-300 via-fuchsia-200 to-orange-200 text-green-900">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="/about/profile.jpg" alt="About Us" 
+                    <Image width={500} height={300} src="/about/profile.JPG" alt="About Us" 
                       className="w-full h-auto rounded-lg shadow-lg object-cover"/>
                 </div>
 
@@ -52,32 +43,7 @@ export default function About(){
                     <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
                         Learn More
                     </button>
-                    {/* <div className="mb-8">
-                        <h3 className="text-2xl font-semibold mb-4">Experience</h3>
-                        <ul className="border-l-2 border-green-500 pl-4 space-y-4">
-                            {timeline.map((item, index) => (
-                                <li key={index}>
-                                    <span className="block font-semibold">{item.year}</span>
-                                    <span className="text-green-700">{item.detail}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div> */}
-
-                    {/* <div>
-                        <h3 className="text-2xl font-semibold mb-4">Skills</h3>
-                        {skills.map((skill, index) => (
-                            <div key={index} className="mb-4">
-                                <span className="block text-sm font-medium mb-1">{skill.name}</span>
-                                <div className="w-full bg-green-200 rounded-full h-3">
-                                    <div className="bg-green-600 h-3 rounded-full transition-all duration-1000 ease-out"
-                                      style={{width: animation ? `${skill.level}%` : "0%"}}>
-                                      </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div> */}
-
+                    
                 </div>
             </div>
         </section>
