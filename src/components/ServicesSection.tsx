@@ -3,27 +3,27 @@ import Image from "next/image";
 const services = [
     {
         title: "Project Management",
-        description: "Effective planning, execution and delivery of projects tailored to your business goals.",
+        description: "We plan, execute and oversee projects from concept to completion- ensuring efficiency, timely delivery and measurable results through structured workflows and strategic execution.",
         image: "/icons/market.png",
     },
     {
-        title: "Product Research",
-        description: "In-depth market research and data analysis to identify opportunities and strategies.",
+        title: "Business Online Presence",
+        description: "We conduct in-depth audit to determine were your business is missing quality leads .",
         image: "/icons/research.png"
     },
     {
-        title: "Application Developement",
-        description: "Custom web applications, to scale and enhance performance.",
+        title: "Web Application Developement",
+        description: "From responsive websites to custom web apps, we build robust, scalable, and user-friendly digital platforms tailored to your business goals and user needs",
         image: "/icons/coding.png"
     },
     {
         title: "SEO & Social Media Marketing",
-        description: "Boost your online visibility and engage with customers through strategic campaigns.",
+        description: "We help you rank higher, reach the right audience and grow organically with proven SEO strategies that boost visibility and bring qualified traffic to page.",
         image: "/icons/market-analysis.png"
     },
     {
         title: "IT Support & Tech Setup",
-        description: "Reliable IT support and system setup to keep your business running smoothly.",
+        description: "We offer reliable, end-to-end IT support services that ensure your systems run smoothly, securely, and without disruption - so you can focus on growing your business.",
         image: "/icons/network-admin.png"
     },
     {

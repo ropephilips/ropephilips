@@ -10,9 +10,9 @@ export default function CTASection(){
     return (
         <section id="cta" className="py-10 bg-gradient-to-r from-green-400 via-green-800 to-green-600 text-white text-center">
             <div className="max-w-3xl mx-auto px-6">
-                <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+                <h1 className="text-3xl md:text-4xl font-serif font-bold mb-6">
                     Ready To Grow Your Business?
-                </h2>
+                </h1>
                 <p className="mb-8 text-sm lg:text-lg text-green-100">
                     Let's work together to create tailored solutions that drives real results for your business.
                 </p>

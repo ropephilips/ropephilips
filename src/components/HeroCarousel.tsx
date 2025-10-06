@@ -11,11 +11,11 @@ export default function HeroCarousel(){
 
          <div className="relative z-10 max-w-5xl mx-auto px-6 fade-up">
             <h1 className="text-4xl md:text-6xl font-bold font-serif leading-tight">
-                We design, build & optimize tech solutions to grow your business.
+                We Design, Build & Optimize Tech Solutions That Power Business Growth.
             </h1>
             <p className="mt-4 text-lg max-w-2xl font-serif">
-                From project management to web application developement, digital marketing and IT support - 
-                we deliver solutions, strategies and tools that moves your business forward.
+                From project management to web application developement, digital marketing, SEO and IT support - 
+                we deliver strategies, tools and systems that moves your business forward and help you scale smarter.
             </p>
 
             <div className="mt-6 flex gap-2">

@@ -31,7 +31,7 @@ export default function Navbar(){
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
                 <div onClick={() => scrollToSection("home")} 
                     className="flex items-center space-x-2 cursor-pointer text-white font-bold font-serif">
-                     <Image src="/logoo.PNG" className="w-42 md:w-32 sm:w-24 lg:w-42 h-auto object-cover max-w-full max-h-full mt-7 " alt="Logo" width={200} height={120} priority={true} />
+                     <Image src="/logo.PNG" className="w-42 md:w-32 sm:w-24 lg:w-42 h-auto object-cover max-w-full max-h-full mt-7 " alt="Logo" width={200} height={120} priority={true} />
                      {/* <span className="uppercase text-sm pr-40">Digital</span> */}
                 </div>
             <div className="hidden md:flex space-x-8 font-serif rounded">

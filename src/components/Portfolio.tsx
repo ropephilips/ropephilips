@@ -2,43 +2,43 @@ import Image from "next/image";
 export default function PortfolioSection(){
     const projects = [
         {
-            title: "Project Management Dashboard",
+            title: "Project Management",
             image: "/portfolio/project1.JPG",
-            description: "Full-stack platform for managing business operations."
+            description: "Manage projects for a startup company"
         },
         {
             title: "IT Support ",
             image: "/portfolio/project5.JPG",
-            description: "Setup, monitor and manage online activities"
+            description: "Setup, monitor and manage online activities for a church"
         },
         {
-            title: "Branding Design",
+            title: "SEO Campaign",
             image: "/portfolio/project2.JPG",
-            description: "SEO campaign for E-commerce"
+            description: "Optimize keywords and structure contents for an e-commerce business"
         },
         {
             title: "Software Development",
             image: "/portfolio/project3.JPG",
-            description: "Full-stack application"
+            description: "custom built software for a fish farm"
         },
         {
-            title: "Project Research ",
+            title: "Online visibility",
             image: "/portfolio/project4.JPG",
-            description: "Research best tools to automate and increase productivity."
+            description: "online visibility audit"
         },
         {
-            title: "Project Management Dashboard",
+            title: "Business analysis dashboard",
             image: "/portfolio/project6.JPG",
-            description: "Admin platform for managing business operations."
+            description: "Admin platform for analyzing business growth"
         }
     ];
 
     return (
         <section id="portfolio" className="py-8 lg:py-18 bg-green-50 text-green-900 ">
             <div className="max-w-5xl mx-auto px-5">
-                <h2 className="text-3xl lg:text-4xl font-serif font-bold text-center mb-12">
+                <h1 className="text-3xl lg:text-4xl font-serif font-bold text-center mb-12">
                     Our Projects
-                </h2>
+                </h1>
                 <div className="grid md:grid-cols-2 gap-6 mx-4">
                     {projects.map((p,i) => (
                         <div key={i} className="bg-white rounded-lg shadow hover:shadow-lg transition">

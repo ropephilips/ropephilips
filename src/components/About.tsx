@@ -2,6 +2,8 @@
 import Image from "next/image";
 
 import { useEffect, useState } from "react";
+import { FaEye } from "react-icons/fa6";
+import { TbTargetArrow } from "react-icons/tb";
 
 
 export default function About(){
@@ -29,20 +31,39 @@ export default function About(){
                 </div>
 
                 <div>
-                    <h2 className="text-4xl font-bold font-serif mb-4 lg:mb-6">About Us</h2>
+                    <h1 className="text-xl font-bold font-serif mb-4 lg:mb-6">About Ropephilips Digital</h1>
                     <p className="text-green-700 text-sm mb-4 font-serif">
-                         We provide innovative solutions in Project management, Digital marketing, Application development, SEO and IT support.
-                        <br/>With our passion for productivity, We help businesses scale through efficient systems and digital transformation.
+                         At <strong>Ropephilips Digital</strong> we deliver innovative technology solutions designed to help businesses scale, Optimize operations, and achieve measurable growth.
+                         We specialize in <strong>project management, digital marketing, web application developement, SEO and IT support</strong>
+                         , empowering organizations to transform their ideas into impactful digital experiences. 
                     </p>
-                    <ul className="space-y-3 font-serif text-green-800">
-                        <li>✅ 10+ years experience in project management.</li>
-                        <li>✅ Expert in modern application development.</li>
-                        <li>✅ Proven SEO, Digital & Social media marketing strategies.</li>
-                        <li>✅ Reliable IT support and business tech setup.</li>
-                    </ul>
-                    <button className="mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
-                        Learn More
-                    </button>
+                    <p className="text-green-700 text-sm mb-4 font-serif">
+                      Driven by passion for <strong>productivity and transformation</strong>, we partner with businesses across industries to 
+                      implement efficient systems, streamline workflows, enhance online visibility and unlock new growth opportunities.
+                      Whether you're a startup building your digital foundation or an established brand seeking optimization, we provide the tools
+                      and expertise to help you thrive in a competitive digital world.
+                    </p>
+                    <div>
+                        <div className="flex items-center space-x-3 text-lg mb-2">
+                            <TbTargetArrow className="text-red-400" />
+                            <span className="font-bold font-serif">Our Mission</span>
+                        </div>
+                        
+                        <p className="text-sm font-serif mb-3">
+                            To empower businesses globally with cutting-edge digital solutions and efficient systems that drive productivity,
+                            accelerata growth and support seamless digital transformation.
+                        </p>
+
+                        <div className="flex items-center space-x-3 text-lg mb-2">
+                            <FaEye className=" text-blue-400" />
+                            <span className="font-bold font-serif">Our Vision</span>
+                        </div>
+                        <p className="text-sm font-serif">
+                            To become a trusted global leader in delivering innovative digital solutions - helping
+                            businesses of all sizes leverage technology to scale smarter, operate more efficiently and achieve long-term success.
+                        </p>
+                    </div>
+                    
                     
                 </div>
             </div>

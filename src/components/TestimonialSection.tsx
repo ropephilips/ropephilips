@@ -29,8 +29,8 @@ const testimonial = [
     },
     {
         name: "Sandra Mia",
-        title: "CMO, Sky Digital Agency",
-        quote: "Their leads generation strategy doubled our conversations in just 3 weeks. Highly recommend their services."
+        title: "CMO, NGO",
+        quote: "Help setup a CRM and email marketing platform. Highly recommend their services."
     },
     {
         name: "Praise",

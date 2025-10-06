@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { FaSquareXTwitter, FaEnvelope, FaFacebook } from "react-icons/fa6";
+import { FaEnvelope, FaFacebook, FaLinkedin } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Contact() {
@@ -43,9 +43,9 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
         {/* Left Column */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold font-serif mb-6 text-center">
             Contact Us
-          </h2>
+          </h1>
           <p className="mb-8 text-green-700 font-serif text-center">
             Have a project in mind or want to explore how we can work together?
             Let's start the conversation.
@@ -61,12 +61,12 @@ export default function Contact() {
               {/* Email */}
               <div className="flex-1 bg-green-400 rounded-lg font-serif hover:bg-green-300 text-gray-800 p-4 text-center">
                 <FaEnvelope className="h-5 w-5 mx-auto mb-2" />
-                <p className="text-sm font-serif">info@gmail.com</p>
+                <p className="text-sm font-serif">ropephilipsdigital@gmail.com</p>
               </div>
               {/* Twitter */}
               <div className="flex-1 bg-green-400 rounded-lg font-serif hover:bg-gray-800 hover:text-white text-gray-800 p-4 text-center">
-                <FaSquareXTwitter className="h-5 w-5 mx-auto mb-2" />
-                <Link href="https://x.com/ropephilips" className="text-sm font-serif">@ropephilips</Link>
+                <FaLinkedin className="h-5 w-5 mx-auto mb-2" />
+                <Link href="https://linken.com/ropephilips" className="text-sm font-serif">@ropephilips</Link>
               </div>
             </div>
           </div>
