@@ -1,5 +1,16 @@
+"use client";
 import Image from "next/image";
-export default function PortfolioSection(){
+import {motion, useInView} from "framer-motion";
+import { useRef } from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
+export default function Project(){
+    const ref = useRef(null);
+    const inView = useInView(ref, {once: true});
+
     const projects = [
         {
             title: "Project Management",
@@ -32,27 +43,68 @@ export default function PortfolioSection(){
             description: "Admin platform for analyzing business growth"
         }
     ];
-
     return (
-        <section id="portfolio" className="py-8 lg:py-18 bg-green-50 text-green-900 ">
-            <div className="max-w-5xl mx-auto px-5">
-                <h1 className="text-3xl lg:text-4xl font-serif font-bold text-center mb-12">
-                    Our Projects
-                </h1>
-                <div className="grid md:grid-cols-2 gap-6 mx-4">
-                    {projects.map((p,i) => (
-                        <div key={i} className="bg-white rounded-lg shadow hover:shadow-lg transition">
-                            <Image src={p.image} alt={p.title} width={500} height={300} className="w-full h-56 bg-cover bg-center rounded-t-lg" />
-                            <div className="p-4">
-                                <span className="text-sm font-serif text-green-600">{p.description}</span>
-                                <h3 className="text-lg font-semibold font-serif mt-1">{p.title}</h3>
-                                <a href="#" className="text-green-500 text-sm mt-3 inline-block hover:underline">Read More ➡</a>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+         <section id="pj" ref={ref} className="py-8 lg:py-12 bg-green-50 text-green-900 ">
+            <div className="max-w-5xl mx-auto px-5 text-center">
+                <motion.h1 initial={{opacity: 0, y: 30}}
+                 animate={inView ? {opacity: 1, y: 0 } : {}}
+                 transition={{duration: 0.6}}
+                 className="text-xl md:text-3xl font-serif font-bold mb-1 tracking-tight">
+                   Our Projects
+                 </motion.h1>
+                 <p className="tracking-[0.35em] md:tracking-[0.50em] text-xs text-green-700 mb-6 md:mb-10">some use case projects</p>
 
-        </section>
-    );
+                    <div className="block md:hidden ">
+                                     <Swiper spaceBetween={20} slidesPerView={1}
+                                     pagination={{clickable: true}}
+                                     autoplay={{ delay: 5000, disableOnInteraction: false}}
+                                     modules={[Autoplay,Pagination]}>
+                 
+                                         {projects.map((p, index) => (
+                                             <SwiperSlide className="mb-8" key={index}>
+                                                 <motion.div initial={{opacity:0, y: 30}}
+                                                 animate={inView ? {opacity: 1, y: 0} : {}}
+                                                 transition={{duration: 0.6}}
+                                                 className="bg-white rounded-xl shadow hover:shadow-lg transition-all text-left">
+                                                 <Image src={p.image} alt={p.title} width={500} height={200} className="p-3 w-full h-35 md:h-60 bg-cover bg-center rounded-2xl" />
+                                                 <div className="mt-2 pl-3 pb-6">
+                                                    <p className="mb-2 text-sm font-serif text-green-600 tracking-tighter">{p.description}</p>
+                                <h3 className="text-lg font-semibold font-serif mt-1 tracking-tighter">{p.title}</h3>
+                                <a href="#" className="text-green-500 mt-3 inline-flex items-center gap-1 text-sm font-medium hover:underline">
+                                    Read more 
+                                    <span className="text-orange-500 transition-transform duration-200 group-hover:translate-x-1">➡</span>
+                                </a>
+                                                 </div>
+                                                 </motion.div>
+                                             </SwiperSlide>
+                                         ))}
+                                     </Swiper>
+                                  </div>
+
+                    <motion.div initial={{opacity: 0, y: 50}}
+                                        animate={inView ? {opacity: 1, y: 0} : {}}
+                                        transition={{ duration: 0.10, delay: 0.2}}
+                                        className="hidden md:grid gap-6 md:grid-cols-2 lg:grid-cols-2 ">
+                                            {projects.map((p, index) => (
+                                        
+                                    <motion.div key={index} 
+                                       initial={{opacity: 0, y: 30}} 
+                                       animate={inView ? {opacity: 1, y: 0} : {}}
+                                       transition={{ duration: 0.6, delay: index * 0.2 }} 
+                                       className="bg-white rounded-xl shadow hover:shadow-lg transition-all text-left">
+                                        <Image src={p.image} alt={p.title} width={500} height={200} className="p-3 w-full h-35 md:h-60 bg-cover bg-center rounded-2xl" />
+                                                <div className="mt-2 pl-3 pb-6">
+                                                    <p className="mb-2 text-sm font-serif text-green-600 tracking-tighter">{p.description}</p>
+                                <h3 className="text-lg font-semibold font-serif mt-1 tracking-tighter">{p.title}</h3>
+                                <a href="#" className="text-green-500 mt-3 inline-flex items-center gap-1 text-sm font-medium hover:underline">
+                                    Read more 
+                                    <span className="text-orange-500 transition-transform duration-200 group-hover:translate-x-1">➡</span>
+                                </a>
+                                                 </div>
+                                            </motion.div>
+                                        ))}
+                                    </motion.div>
+            </div>
+         </section>
+    )
 }

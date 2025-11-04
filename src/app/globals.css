@@ -30,6 +30,51 @@
   animation: fadeUp 1s ease forwards;
 }
 
+.glow-ring {
+  transition: all 0.3s ease;
+}
+
+.glow-ring:hover,
+.glow-ring:focus {
+  box-shadow: 0 0 15px 3px rgba(99,102,241,0.7);
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes spin-gradient {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(360deg);
+  }
+}
+
+.gradient-ring {
+  position: relative;
+  z-index: 0;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.gradient-ring::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: conic-gradient(from 0deg, #ff00ff,#00ffff, #00ff00, #ffff00, #ff0000, #ff00ff);
+  animation: spin-gradient 3s linear infinite;
+}
+
+.gradient-ring::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0f482e;
+  border-radius: 9999px;
+  z-index: -1;
+}
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

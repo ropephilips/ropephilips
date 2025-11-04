@@ -61,7 +61,7 @@ export default function Contact() {
               {/* Email */}
               <div className="flex-1 bg-green-400 rounded-lg font-serif hover:bg-green-300 text-gray-800 p-4 text-center">
                 <FaEnvelope className="h-5 w-5 mx-auto mb-2" />
-                <p className="text-sm font-serif">ropephilipsdigital@gmail.com</p>
+                <p className="text-sm font-serif">ropephilips@gmail.com</p>
               </div>
               {/* Twitter */}
               <div className="flex-1 bg-green-400 rounded-lg font-serif hover:bg-gray-800 hover:text-white text-gray-800 p-4 text-center">
@@ -73,38 +73,38 @@ export default function Contact() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="bg-white p-6 rounded-lg shadow-lg w-full">
+        <div className="bg-white p-6 rounded-xl shadow-lg w-full backdrop-blur">
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               name="name"
               placeholder="Your Name"
               required
-              className="w-full border border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
+              className="w-full border glow-ring bg-transparent border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="w-full border border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
+              className="w-full border glow-ring bg-transparent border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
             />
             <input
               name="phone"
               placeholder="Phone number"
               required
-              className="w-full border border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
+              className="w-full border glow-ring bg-transparent border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
             />
             <textarea
               name="message"
               rows={4}
               placeholder="Enter Message"
               required
-              className="w-full border border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
+              className="w-full border glow-ring bg-transparent border-green-300 rounded-lg p-3 focus:outline-none focus:ring-green-500"
             />
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 rounded text-white transition ${
+              className={`w-full py-3 glow-ring rounded text-white transition ${
                 loading
                   ? "bg-green-400 cursor-not-allowed"
                   : "bg-green-700 hover:bg-green-500 cursor-pointer"

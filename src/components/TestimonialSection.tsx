@@ -54,23 +54,23 @@ export default function TestimonialSection(){
                 <motion.h2 initial={{opacity: 0, y: 30}}
                  animate={inView ? {opacity: 1, y: 0 } : {}}
                  transition={{duration: 0.6}}
-                 className="text-lg md:text-4xl sm:text-3xl lg:text-4xl font-serif font-bold mb-8 lg:mb-12">
+                 className="text-lg md:text-4xl sm:text-3xl lg:text-4xl font-serif font-bold mb-6 lg:mb-12">
                    What Our Clients Say
                  </motion.h2>
 
-                 <div className="block md:hidden">
+                 <div className="block md:hidden ">
                     <Swiper spaceBetween={20} slidesPerView={1}
                     pagination={{clickable: true}}
                     autoplay={{ delay: 3000, disableOnInteraction: false}}
                     modules={[Autoplay,Pagination]}>
 
                         {testimonial.map((item, index) => (
-                            <SwiperSlide key={index}>
+                            <SwiperSlide className="mb-8" key={index}>
                                 <motion.div initial={{opacity:0, y: 30}}
                                 animate={inView ? {opacity: 1, y: 0} : {}}
                                 transition={{duration: 0.6}}
-                                className="bg-white p-6 mb-6 rounded-lg shadow-md text-left">
-                                <p className="italic mb-4 text-gray-800">&ldquo;{item.quote}&rdquo;</p>
+                                className="bg-white p-8 inst shadow-md text-left rounded-lg">
+                                <p className="mb-4 text-sm text-gray-800">&ldquo;{item.quote}&rdquo;</p>
                                 <div className="font-semibold text-green-700">{item.name}</div>
                                 <div className="text-sm font-serif text-orange-500">{item.title}</div>
                                 </motion.div>
@@ -90,7 +90,7 @@ export default function TestimonialSection(){
                    animate={inView ? {opacity: 1, y: 0} : {}}
                    transition={{ duration: 0.6, delay: index * 0.2 }} 
                    className="bg-white p-6 mb-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-left">
-                            <p className="italic mb-4 text-gray-800">&ldquo;{item.quote}&rdquo;</p>
+                            <p className="mb-4 text-gray-800">&ldquo;{item.quote}&rdquo;</p>
                             <div className="font-semibold text-green-700">{item.name}</div>
                             <div className="text-sm font-serif text-orange-500">{item.title}</div>
                         </motion.div>

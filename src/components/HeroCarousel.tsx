@@ -14,13 +14,13 @@ export default function HeroCarousel(){
                 We Design, Build & Optimize Tech Solutions That Power Business Growth.
             </h1>
             <p className="mt-4 text-lg max-w-2xl font-serif">
-                From project management to web application developement, digital marketing, SEO and IT support - 
-                we deliver strategies, tools and systems that moves your business forward and help you scale smarter.
+                 From project management to web application developement, digital marketing and IT support - 
+                we deliver solutions, strategies and tools that moves your business forward.
             </p>
 
             <div className="mt-6 flex gap-2">
                 <button onClick={() => document.getElementById("contact") ?.scrollIntoView({behavior: "smooth"})} className="cursor-pointer bg-orange-400 hover:bg-orange-500 text-white px-5 py-3 rounded-lg font-serif font-semibold">
-                    Start a Project
+                    Get Started
                 </button>
                 <button onClick={() => document.getElementById("services") ?.scrollIntoView({behavior: "smooth"})} className="border border-orange-800 font-serif hover:bg-orange-500 hover:text-white text-orange-400 px-5 py-3 rounded-lg font-semibold cursor-pointer">
                     Explore Services

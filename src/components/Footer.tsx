@@ -37,7 +37,7 @@ export default function Footer(){
                     <ul className="space-y-2 text-sm font-serif">
                         <li><a href="#home" className="hover:text-green-950">Home</a></li>
                         <li><a href="#service" className="hover:text-green-950">Service</a></li>
-                        <li><a href="#portfolio" className="hover:text-green-950">Portfolio</a></li>
+                        <li><a href="#projects" className="hover:text-green-950">Projects</a></li>
                         <li><a href="#about" className="hover:text-green-950">About</a></li>
                         <li><a href="#contact" className="hover:text-green-950">Contact</a></li>
                     </ul>
@@ -47,7 +47,7 @@ export default function Footer(){
                     <h4 className="text-lg font-semibold font-serif mb-2">Contact</h4>
                     <div className="flex items-center space-x-2 text-sm mb-3">
                         <FaEnvelopeOpenText className="text-lg text-white"/> 
-                          <span className="text-sm md:text-base font-serif">ropephilipsdigital@gmail.com</span>
+                          <span className="text-sm md:text-base font-serif">ropephilips@gmail.com</span>
                     </div>
                     <div className="text-lg font-semibold font-serif mb-4 mt-2">
                     <h4 className="mb-2">Connect With Us</h4>

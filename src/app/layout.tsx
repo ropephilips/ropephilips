@@ -40,6 +40,26 @@ export default function RootLayout({
         <GotoTop/>
         <Footer/>
       </body>
+      {/* <script type="application/ld+json">
+         {
+          "@context" : "https://schema.org",
+          "@type" : "organization",
+          "name" : "Ropephilips Digital",
+          "url" : "https://ropephilips.vercel.app",
+          "logo" : "https://ropephilips.vercel.app/logo.png",
+          "sameAs" : [
+            "https://twitter.com/ropephilips",
+            "https://linkedin.com/company/ropephilips"
+          ],
+          "contactPoint" : [{
+            "@type" : "ContactPoint",
+            "telephone" : "",
+            "contactType" : "customer service",
+            "areaServed" : "Worldwide",
+            "availableLanguage" : "English"
+          }]
+         }
+      </script> */}
     </html>
   );
 }

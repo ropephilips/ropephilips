@@ -31,16 +31,17 @@ export default function About(){
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-bold font-serif mb-4 lg:mb-6">About Ropephilips Digital</h1>
+                    <h1 className="text-xl font-bold font-serif mb-4 lg:mb-6">About Ropephilips </h1>
                     <p className="text-green-700 text-sm mb-4 font-serif">
-                         At <strong>Ropephilips Digital</strong> we deliver innovative technology solutions designed to help businesses scale, Optimize operations, and achieve measurable growth.
-                         We specialize in <strong>project management, digital marketing, web application developement, SEO and IT support</strong>
+                        <strong>Ropephilips</strong> is a global technology company that delivers innovative solutions designed to help businesses scale, optimize operations, stay secured and achieve measurable growth.
+                         <br/>We specialize in <strong> Web application developement, Saas (Software as a Service), Workflow automation setup, Digital marketing (Email campaign, Email template design,
+                             social media content calender, social media content strategies) and SEO(search engine optimization), 
+                             Custom email setup, AI engine optimization</strong>
                          , empowering organizations to transform their ideas into impactful digital experiences. 
                     </p>
                     <p className="text-green-700 text-sm mb-4 font-serif">
-                      Driven by passion for <strong>productivity and transformation</strong>, we partner with businesses across industries to 
-                      implement efficient systems, streamline workflows, enhance online visibility and unlock new growth opportunities.
-                      Whether you're a startup building your digital foundation or an established brand seeking optimization, we provide the tools
+                      Our team of engineers, developers and strategist are driven by passion for <strong>productivity and transformation</strong> to build your end-to-end solutions across industries.
+                      <br/>Whether you're a startup building your digital foundation or an established brand seeking optimization, we provide the tools
                       and expertise to help you thrive in a competitive digital world.
                     </p>
                     <div>
@@ -50,8 +51,8 @@ export default function About(){
                         </div>
                         
                         <p className="text-sm font-serif mb-3">
-                            To empower businesses globally with cutting-edge digital solutions and efficient systems that drive productivity,
-                            accelerata growth and support seamless digital transformation.
+                            To empower businesses globally with cutting-edge digital solutions and efficient systems that drive security, productivity,
+                            accelerate growth and support seamless digital transformation.
                         </p>
 
                         <div className="flex items-center space-x-3 text-lg mb-2">

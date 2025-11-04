@@ -2,6 +2,11 @@ import Image from "next/image";
 
 const services = [
     {
+        title: "Web Application Developement",
+        description: "From responsive websites to custom web apps, we build robust, scalable, and user-friendly digital platforms tailored to your business goals and user needs",
+        image: "/icons/coding.png"
+    },
+    {
         title: "Project Management",
         description: "We plan, execute and oversee projects from concept to completion- ensuring efficiency, timely delivery and measurable results through structured workflows and strategic execution.",
         image: "/icons/market.png",
@@ -11,11 +16,7 @@ const services = [
         description: "We conduct in-depth audit to determine were your business is missing quality leads .",
         image: "/icons/research.png"
     },
-    {
-        title: "Web Application Developement",
-        description: "From responsive websites to custom web apps, we build robust, scalable, and user-friendly digital platforms tailored to your business goals and user needs",
-        image: "/icons/coding.png"
-    },
+    
     {
         title: "SEO & Social Media Marketing",
         description: "We help you rank higher, reach the right audience and grow organically with proven SEO strategies that boost visibility and bring qualified traffic to page.",

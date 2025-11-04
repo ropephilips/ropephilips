@@ -2,7 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import CTASection from "@/components/CTASection";
 import HeroCarousel from "@/components/HeroCarousel";
-import PortfolioSection from "@/components/Portfolio";
+import Project from "@/components/Project";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialSection from "@/components/TestimonialSection";
 
@@ -11,9 +11,9 @@ export default function Home() {
     <main>
       <section id="home"><HeroCarousel/></section>
       <section id="service"><ServicesSection/></section>
-      <TestimonialSection/>
+      <section id="projects"><Project/></section>
       <CTASection/>
-      <section id="portfolio"><PortfolioSection/></section>
+      <TestimonialSection/>  
       <section id="about"><About/></section>
       <section id="contact"><Contact/></section>  
     </main>

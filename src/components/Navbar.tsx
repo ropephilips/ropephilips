@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Navbar(){
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const links = ["home", "service", "portfolio", "about", "contact"];
+    const links = ["home", "service", "project", "about", "contact"];
 
     useEffect (() =>{
         const handelScroll = () => {
@@ -31,7 +31,10 @@ export default function Navbar(){
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
                 <div onClick={() => scrollToSection("home")} 
                     className="flex items-center space-x-2 cursor-pointer text-white font-bold font-serif">
-                     <Image src="/logo.PNG" className="w-42 md:w-32 sm:w-24 lg:w-42 h-auto object-cover max-w-full max-h-full mt-7 " alt="Logo" width={200} height={120} priority={true} />
+                     <Image src="/logo.PNG" alt="Logo Icon" width={100} height={100} className="block md:hidden pt-4 w-30 h-30 
+                           brightness-125 contrast-125 saturate-150 opacity-100" priority={true} />
+                     <Image src="/logo.PNG" className="hidden md:block w-42 md:w-32 sm:w-24 
+                     lg:w-38 h-auto object-cover max-w-full max-h-full mt-7 brightness-125 contrast-125 saturate-150 opacity-100 " alt="Logo" width={200} height={120} priority={true} />
                      {/* <span className="uppercase text-sm pr-40">Digital</span> */}
                 </div>
             <div className="hidden md:flex space-x-8 font-serif rounded">
