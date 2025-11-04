@@ -5,8 +5,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
-// import { DefaultSeo } from "next-seo";
-// import defaultSEOConfig from "@/../next-seo.config";
 import GotoTop from "@/components/GoToTop";
 
 // const geistSans = Geist({
@@ -33,33 +31,12 @@ export default function RootLayout({
     <html lang="en">
       {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} > */}
       <body className="antialiased">
-        {/* <DefaultSeo {...defaultSEOConfig}/> */}
         <Navbar/>
         {children}
         <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
         <GotoTop/>
         <Footer/>
       </body>
-      {/* <script type="application/ld+json">
-         {
-          "@context" : "https://schema.org",
-          "@type" : "organization",
-          "name" : "Ropephilips Digital",
-          "url" : "https://ropephilips.vercel.app",
-          "logo" : "https://ropephilips.vercel.app/logo.png",
-          "sameAs" : [
-            "https://twitter.com/ropephilips",
-            "https://linkedin.com/company/ropephilips"
-          ],
-          "contactPoint" : [{
-            "@type" : "ContactPoint",
-            "telephone" : "",
-            "contactType" : "customer service",
-            "areaServed" : "Worldwide",
-            "availableLanguage" : "English"
-          }]
-         }
-      </script> */}
     </html>
   );
 }
